@@ -69,8 +69,11 @@ def send_message(message: str, receiver: str, wait_time: int) -> None:
                 hotkey("shift", "enter")
             else:
                 typewrite(char)
+    print("Clicking...")
+    click(WIDTH / 2, HEIGHT *3 / 4)
+    print("Press enter...")
     press("enter")
-
+    #typewrite("\n")
 
 def copy_image(path: str) -> None:
     """Copy the Image to Clipboard based on the Platform"""
